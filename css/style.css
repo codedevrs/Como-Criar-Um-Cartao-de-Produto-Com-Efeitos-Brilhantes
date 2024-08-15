@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/bg-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 892px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.box-esq {
+    width: 480px;
+    height: 553px;
+    background: #c62324;
+    border-radius: 23px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.texto-vertical {
+    opacity: 0.5;
+    transform: rotate(-90deg) scale(1.2);
+    margin-top: -5px;
+    margin-left: 20px;
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 80px;
+    font-family: sans-serif;
+    color: #d66565;
+}
+
+.box-dir {
+    width: 654px;
+    height: 479px;
+    background-image: linear-gradient(90deg, #633041 0%, #21172f 46%, #30182e 100%);
+    position: absolute;
+    left: -10%;
+    transform: translateX(50%);
+    border-radius: 23px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+
+        img {
+            width: 500px;
+            height: 350px;
+        }
+}
+
+.conteudo-principal {
+    position: absolute;
+    width: 500px;
+    height: 550px;
+    top: 50%;
+    left: -5%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.info-produto {
+    width: 375px;
+    height: 300px;
+    margin: 50px 0 0 235px;
+    color: #fff;
+
+    h1 {
+        font-weight: 800;
+        line-height: 46px;
+        font-size: 55px;
+        margin-bottom: 15px;
+        color: blue;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+    }
+
+    h4 {
+        font-weight: 200;
+        font-size: 20px;
+        letter-spacing: 1.6px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        color: yellow;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 32px;
+        letter-spacing: 1.6px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        color: yellow;
+    }
+
+    p {
+        max-width: 85%;
+        margin-left: 15%;
+        text-align: justify;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        height: 48px;
+        background: #cb2140;
+        border-radius: 90px;
+        align-items: right;
+        font-weight: 300;
+        line-height: 35px;
+        font-size: 14px;
+        padding: 0 24px;
+        color: #fff;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    button:hover {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+}
